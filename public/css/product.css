@@ -1,0 +1,50 @@
+.title {
+    border-bottom: black 3px solid;
+    animation-name: line;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.alert {
+    z-index: -9 !important;
+}
+
+@keyframes line {
+    0% {
+        border-bottom: black 3px solid;
+    }
+    25% {
+        border-bottom: rgb(255, 89, 24) 3px solid;
+    }
+    50% {
+        border-bottom: rgb(22, 247, 255) 3px solid;
+    }
+    75% {
+        border-bottom: rgb(255, 22, 243) 3px solid;
+    }
+    100% {
+        border-bottom: black 3px solid;
+    }
+}
+
+#alert {
+    position: fixed;
+    top: 300px;
+    right: 5%;
+    background: rgb(255, 255, 255);
+    animation-name: bg_alert;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes bg_alert {
+    0% {
+        background: rgb(255, 255, 255);
+    }
+    50% {
+        background: rgb(245, 53, 53);
+    }
+    100% {
+        background: rgb(255, 255, 255);
+    }
+}

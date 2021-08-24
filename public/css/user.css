@@ -1,0 +1,70 @@
+.tableFixHead {
+    overflow: auto;
+    height: 700px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+th {
+    background: rgb(126, 228, 253);
+}
+
+.bg-1 {
+    background: rgba(214, 247, 255, 0.815);
+}
+
+.bg-2 {
+    background: rgb(246, 217, 255);
+}
+
+#result-search {
+    position: absolute;
+    top: 100%;
+    min-width: 500px;
+    max-width: 700px;
+    background: rgba(158, 255, 226, 0.87);
+    z-index: 9999;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.d-play {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.search-item {
+    margin: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.search-item a {
+    transition: 0.5s;
+}
+
+.search-item:hover a {
+    color: white !important;
+}
+
+.search-item:hover {
+    background: rgb(234, 143, 246);
+}
